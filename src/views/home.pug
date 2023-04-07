@@ -1,0 +1,10 @@
+extends base
+include mixins/video
+
+block content 
+    h2 welcome to Wetube homepage
+    each items in videos
+        +video(items)
+
+    else
+        li sorry nothing found

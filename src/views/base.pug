@@ -1,0 +1,13 @@
+doctype html 
+html(lang="ko")
+    head     
+        link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+        title #{pageTitle} page
+        
+        
+    body 
+        header   
+            h1=pageTitle
+        main
+            block content
+    include partials/footer
